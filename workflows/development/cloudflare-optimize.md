@@ -321,8 +321,14 @@ app.get('/', () => counter++);
 ```typescript
 // Use Durable Objects for state
 export class Counter {
-  async fetch(request) {
-    const count = await this.state.storage.get('count') || 0;
+  state: DurableObjectState;
+
+  constructor(state: DurableObjectState, env: Env) {
+    this.state = state;
+  }
+
+  async fetch(request: Request) {
+    const count = (await this.state.storage.get('count')) || 0;
     await this.state.storage.put('count', count + 1);
     return Response.json({ count });
   }
