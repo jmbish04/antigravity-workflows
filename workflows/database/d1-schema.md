@@ -128,7 +128,7 @@ export const postTags = sqliteTable('post_tags', {
     .notNull()
     .references(() => tags.id, { onDelete: 'cascade' }),
 }, (table) => ({
-  pk: index('post_tags_pk').on(table.postId, table.tagId),
+  pk: primaryKey({ columns: [table.postId, table.tagId] }),
 }));
 ```
 
