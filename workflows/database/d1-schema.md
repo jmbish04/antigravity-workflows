@@ -287,6 +287,7 @@ export const orderItems = sqliteTable('order_items', {
   price: integer('price').notNull(), // Price at time of purchase
 }, (table) => ({
   orderIdIdx: index('order_items_order_id_idx').on(table.orderId),
+  productIdIdx: index('order_items_product_id_idx').on(table.productId),
 }));
 
 // Relations
