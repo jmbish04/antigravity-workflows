@@ -119,6 +119,28 @@
                 "fixtures"
             ]
         },
+        "d1-migrate": {
+            "category": "database",
+            "description": "Manage D1 database migrations with Drizzle ORM",
+            "tags": [
+                "cloudflare",
+                "d1",
+                "database",
+                "migration",
+                "drizzle"
+            ]
+        },
+        "d1-schema": {
+            "category": "database",
+            "description": "Design D1 database schemas with Drizzle ORM",
+            "tags": [
+                "cloudflare",
+                "d1",
+                "database",
+                "schema",
+                "drizzle"
+            ]
+        },
         "debug-error": {
             "category": "debugging",
             "description": "Analyze error messages and stack traces, suggest fixes",
@@ -210,6 +232,28 @@
                 "cloud"
             ]
         },
+        "cloudflare-worker": {
+            "category": "deployment",
+            "description": "Create and deploy Cloudflare Workers with best practices",
+            "tags": [
+                "cloudflare",
+                "workers",
+                "edge",
+                "serverless",
+                "d1"
+            ]
+        },
+        "cloudflare-pages": {
+            "category": "deployment",
+            "description": "Deploy full-stack applications to Cloudflare Pages",
+            "tags": [
+                "cloudflare",
+                "pages",
+                "edge",
+                "functions",
+                "jamstack"
+            ]
+        },
         "cli-tool": {
             "category": "development",
             "description": "Build command-line applications with argument parsing",
@@ -299,6 +343,17 @@
                 "quality",
                 "cleanup",
                 "improvement"
+            ]
+        },
+        "cloudflare-optimize": {
+            "category": "development",
+            "description": "Optimize code for Cloudflare Workers and Pages",
+            "tags": [
+                "cloudflare",
+                "optimization",
+                "refactor",
+                "edge",
+                "migration"
             ]
         },
         "api-docs": {
