@@ -136,8 +136,8 @@ export default {
 
     if (url.pathname === '/api/users' && request.method === 'GET') {
       // Handle GET /api/users
-      const users = await env.DB.prepare('SELECT * FROM users').all();
-      return Response.json(users.results);
+      const { results } = await env.DB.prepare('SELECT * FROM users').all();
+      return Response.json(results);
     }
 
     return new Response('Not found', { status: 404 });
